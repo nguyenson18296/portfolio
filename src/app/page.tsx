@@ -1,6 +1,9 @@
+"use client";
 import { AboutMe } from "@/components/AboutMe/about-me";
 import { MyServices } from "@/components/MyServices/my-services";
 import { WorkExperience } from "@/components/WorkExperience/work-experience";
+import { Portfolio } from "@/components/Portfolio/portfolio";
+import { ContactMe } from "@/components/ContactMe/contact-me";
 
 export default function Home() {
   return (
@@ -9,6 +12,8 @@ export default function Home() {
         <AboutMe />
         <MyServices />
         <WorkExperience />
+        <Portfolio />
+        <ContactMe />
       </div>
     </main>
   );
