@@ -12,6 +12,11 @@ const nextConfig = {
         protocol: 'https',
         hostname: 'i.pinimg.com',
         port: ''
+      },
+      {
+        protocol: 'https',
+        hostname: 'travelist.jp',
+        port: ''
       }
     ],
   },

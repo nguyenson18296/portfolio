@@ -27,6 +27,7 @@ export const AboutMe: React.FC = () => {
 
   return (
     <Section
+      sectionId='about-me'
       icon={<User size={14} color='#00bc91' />}
       iconText="About me"
     >
@@ -38,12 +39,9 @@ export const AboutMe: React.FC = () => {
           </h2>
         </div>
         <p className="max-w-2xl mt-4 md:mt-6 subtitle">
-          Hi, my name is Brown Reddick and I began using WordPress when first
-          began. spent most of my waking hours for the last ten years designing,
-          programming and operating WordPress sites go beyond with exclusive
-          designer.
+          I&apos;m a Frontend developer. I&apos;m working with <strong>ReactJS</strong> (tied with <strong>TypeScript</strong>) and for UI testing I use <strong>Enzyme, Jest, Cypress, React testing library</strong>… (and I also have experiences with <strong>VueJS</strong> and basic <strong>NodeJS</strong>).
         </p>
-        <div className='mt-6 section-content'>
+        {/* <div className='mt-6 section-content'>
           <div className='inline-flex flex-wrap items-center gap-2 mb-5 text-sm md:gap-4'>
             {skills.length > 0 && skills.map((skill, index) => (
               <span key={index} className='group relative inline-block px-3.5 py-2 transition duration-300 border border-dashed text-black dark:text-white/70 border-platinum dark:border-greyBlack rounded-3xl md:px-5 md: md:py-2 hover:text-theme dark:hover:text-white'>
@@ -63,14 +61,14 @@ export const AboutMe: React.FC = () => {
               </IconButton>
             </span>
           </div>
-        </div>
+        </div> */}
         <Contact />
-        <ul className='grid grid-cols-2 gap-6 counters md:grid-cols-4 xl:gap-8'>
+        {/* <ul className='grid grid-cols-2 gap-6 counters md:grid-cols-4 xl:gap-8'>
           <li className=""><div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl"><span className='text-[#00bc91]'>185+</span></div><div className="text-sm">Years Of Experience</div></li>
           <li className=""><div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl"><span className='text-[#00bc91]'>12+</span></div><div className="text-sm">Handled Projects</div></li>
           <li className=""><div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl"><span className='text-[#00bc91]'>5+</span></div><div className="text-sm">Open Source Libraries</div></li>
           <li className=""><div className="mb-1 text-2xl font-semibold md:text-3xl number text-theme 2xl:text-4xl"><span className='text-[#00bc91]'>18+</span></div><div className="text-sm">Awards Won</div></li>
-        </ul>
+        </ul> */}
       </div>
     </Section>
   );

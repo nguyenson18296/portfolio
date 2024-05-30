@@ -1,6 +1,5 @@
 'use client'
-import { Bag } from '@phosphor-icons/react';
-import { PenNib, Code, RocketLaunch, BellSimpleRinging } from '@phosphor-icons/react';
+import { Bag, PenNib, Code, RocketLaunch, BellSimpleRinging } from '@phosphor-icons/react';
 
 import { Section } from "../section/section";
 
@@ -34,8 +33,9 @@ const SERVICES = [
 export const MyServices: React.FC = () => {
   return (
     <Section
+      sectionId='services'
       icon={<Bag size={14} color='#00bc91' />}
-      iconText="About me"
+      iconText="Services"
     >
       <div className="mb-8 mt-7 md:my-10 section-title">
         <div className="title text-[32px] md:text-4xl lg:text-5xl font-extralight text-black dark:text-white leading-1.27">
@@ -45,7 +45,7 @@ export const MyServices: React.FC = () => {
           </h2>
         </div>
         <p className='max-w-2xl mt-4 md:mt-6 subtitle'>
-          I design products that are more than pretty. I make them shippable and usable, tempor non mollit dolor et do aute.
+          I built many projects, with many businesses like EdTech, Data analytic tools, Social network, Admin dashboard,...
         </p>
         </div>
         <div className="grid gap-5 md:gap-6 service-card-wrapper sm:grid-cols-2 lg:gap-7 2xl:gap-8">

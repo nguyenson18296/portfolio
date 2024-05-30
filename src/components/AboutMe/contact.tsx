@@ -6,11 +6,12 @@ import {
   Phone,
   SkypeLogo,
   Envelope,
-  XCircle
+  LinkedinLogo
 } from "@phosphor-icons/react";
 import cx from "classnames";
 
 import { Input } from "../commons/input";
+import Link from "next/link";
 
 type TContact = "github" | "language" | "phone" | "skype" | "email";
 
@@ -128,7 +129,7 @@ export const Contact: React.FC = () => {
 
   return (
     <div>
-      <h4>Add Contact Information</h4>
+      {/* <h4>Add Contact Information</h4>
       <div className="mt-2 inline-flex flex-wrap items-center gap-2 mb-5 text-sm md:gap-4">
         {initContacts.map((contact) => {
           const Icon = contact.icon;
@@ -143,9 +144,9 @@ export const Contact: React.FC = () => {
             </span>
           );
         })}
-      </div>
+      </div> */}
       <ul className="grid mt-4 mb-10 text-sm lg:mt-6 md:grid-cols-2 gap-x-8 gap-y-3">
-        {contacts?.map((contact) => (
+        {/* {contacts?.map((contact) => (
           <li key={contact.id} className="flex items-center">
             <div className="group relative w-1/3 min-w-max">
               <span className="flex-[0_0_6rem]">{contact?.name}</span>
@@ -171,7 +172,97 @@ export const Contact: React.FC = () => {
               )}
             </div>
           </li>
-        ))}
+        ))} */}
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <GithubLogo />
+            Github
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+              "hover:text-[#00bc91]"
+            )}
+          >
+            <Link href="https://github.com/nguyenson18296/" target="_blank">
+              https://github.com/nguyenson18296/
+            </Link>
+          </span>
+        </li>
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <Globe />
+            Language
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+            )}
+          >
+            Vietnamese, English
+          </span>
+        </li>
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <Phone />
+            Phone
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+            )}
+          >
+            0773927608
+          </span>
+        </li>
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <SkypeLogo />
+            Skype
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+            )}
+          >
+            0773927608
+          </span>
+        </li>
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <Envelope />
+            Email
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+            )}
+          >
+            nguyenson18296@gmail.com
+          </span>
+        </li>
+        <li className="flex items-center">
+          <span className="flex-[0_0_6rem flex items-center">
+            <LinkedinLogo />
+            Linkedin
+          </span>
+          <span className="flex-[0_0_1rem]">:</span>
+          <span
+            className={cx(
+              "text-black dark:text-white py-1",
+              "hover:text-[#00bc91]"
+            )}
+          >
+            <Link href="https://www.linkedin.com/in/son-nguyen-49a798248/" target="_blank">
+              Son Nguyen
+            </Link>
+          </span>
+        </li>
         {activeType && !isEditing && (
           <li className="flex items-center">
             <span className="flex-[0_0_6rem]">{activeType?.name}</span>

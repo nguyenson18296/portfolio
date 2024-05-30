@@ -21,6 +21,10 @@ body {
   background: rgb(242, 245, 248)
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

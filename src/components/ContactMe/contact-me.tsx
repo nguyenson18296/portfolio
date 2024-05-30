@@ -11,6 +11,7 @@ import { Section } from "../section/section";
 export const ContactMe: React.FC = () => {
   return (
     <Section
+      sectionId="contacts"
       icon={<AddressBook size={14} color="#00bc91" />}
       iconText="Contact"
     >
@@ -20,8 +21,7 @@ export const ContactMe: React.FC = () => {
           <span className="font-semibold text-[#00bc91]">Me.</span>
         </h2>
         <p className="max-w-2xl mt-4 md:mt-6 subtitle">
-          I design products that are more than pretty. I make them shippable and
-          usable, ttempor non mollit dolor et do aute
+          Please contact me for works
         </p>
       </div>
       <div className="grid gap-12 mt-8 mb-10 md:my-12 md:grid-cols-12">
@@ -33,7 +33,7 @@ export const ContactMe: React.FC = () => {
               </div>
               <div className="flex-1">
                 <h6 className="text-lg text-black dark:text-white">Location</h6>
-                <p className="text-sm">Melbourne Street. No 20</p>
+                <p className="text-sm">Ly Thuong Kiet, TPHCM</p>
               </div>
             </li>
             <li className="flex flex-wrap items-center gap-5 ">
@@ -42,7 +42,7 @@ export const ContactMe: React.FC = () => {
               </div>
               <div className="flex-1">
                 <h6 className="text-lg text-black dark:text-white">E-mail</h6>
-                <p className="text-sm">smith@gmail.com</p>
+                <p className="text-sm">nguyenson18296@gmail.com</p>
               </div>
             </li>
             <li className="flex flex-wrap items-center gap-5 ">
@@ -51,7 +51,7 @@ export const ContactMe: React.FC = () => {
               </div>
               <div className="flex-1">
                 <h6 className="text-lg text-black dark:text-white">Phone</h6>
-                <p className="text-sm">+976 34 99 99</p>
+                <p className="text-sm">0773927608</p>
               </div>
             </li>
           </ul>
